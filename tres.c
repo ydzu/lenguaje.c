@@ -1,3 +1,6 @@
+
+/* lo que estuve probando para compilar: gcc -std=c89 -pedantic tres.c */
+
 #include <stdio.h>
 #define MAXLINE 100
 
