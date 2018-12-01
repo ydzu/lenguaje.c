@@ -6,8 +6,9 @@
 int getlin(char line[], int limit);
 void copy(char from[], char to[]);
 
+
 /* 1-17: Write a program to print all input lines that are longer than
- * 80 characters. */
+ * 80 characters.  MODIFIQUÉ GETLINE POR GETLIN PORQUE SE PISABA CON LA FUNCIÓN STANDARD. SIGUE SIN IMPRIMIR. VOY A REVOLEAR LA COMPU POR LA VENTANA PRONTO */
 
 main()
 {
