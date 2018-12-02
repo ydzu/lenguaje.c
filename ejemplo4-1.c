@@ -1,3 +1,5 @@
+/* CREO QUE ESTA BIEN ESCRITO, CÓMO PODRÍA COMPROBARLO?*/
+
 #include <stdio.h>
 #define MAXLINE 1000 /* longitud maxima por linea de entrada*/
 
