@@ -12,7 +12,7 @@ int main()
 
 	while ((c = getchar()) != '\n'){
 		putchar(c);
-		printf("\n%d\n", nc);
+		printf("\n%d\n\n", nc);
 		++nc;
 	}
 
