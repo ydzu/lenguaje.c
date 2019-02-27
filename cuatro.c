@@ -15,7 +15,6 @@ main() /* cuenta digitos, espacios blancos y otros caracteres*/
       break;
     case' ':
     case'\n':
-    case'\n':
     case'\t':
       nwhite++;
       break;
