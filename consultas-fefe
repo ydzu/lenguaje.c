@@ -1,0 +1,4 @@
+sa-6
+
+intento hacer un free(p1) adentro de ceros() y me dice que estoy intentando liberar un puntero que no está alocado en memoria.
+no puedo hacer el círuclo :(

@@ -14,7 +14,7 @@ int* consultaPaso();
 main()
 {
 
-	ceros(10);
+	ceros(100);
 	circulo(*(consultaPaso()));
 	circulo(*(consultaPaso()));
 	circulo(*(consultaPaso()));
@@ -86,16 +86,16 @@ char* ceros(int n) /*la idea es hacer otro malloc con oness y ver si cuando impr
 {
   int i;
   char *p1;
-  p1 = (char*) malloc((n) * sizeof(char));
+  p1 = (char*) malloc( (n) * sizeof(char));
 
 	printf("(1*%d): ", n);
 
-	for (i=0; i<(floor(n/2)); i++){ 							/*el for completa la memoria reservada con unos*/
+	for (i=0; i<(floor(n/2)) ; i++){ 							/*el for completa la memoria reservada con unos*/
  	 *p1 = ' ';  /*le da 1 como valor a donde estáapuntando w1*/
  	 p1++;  /*hace que w1 apunto a la próxima posición de memoria*/
   }
 
-  for (i=0; i<(floor(n/2)+1); i++){ 							/*el for completa la memoria reservada con unos*/
+  for (i=0; i<(floor(n/2)+1) ; i++){ 							/*el for completa la memoria reservada con unos*/
     *p1 = 'L';  /*le da 1 como valor a donde estáapuntando w1*/
     p1++;  /*hace que w1 apunto a la próxima posición de memoria*/
   }
