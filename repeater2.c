@@ -1,39 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char* arrayGen(char charToRepeat, int howManyTimes); //consulta qué char querés repetir y cuántas veces. y devuelve un apuntador a ese arreglo
 int* createCanvas();
 void printCanvas(int *ptrToCanvas);
 
 
 main()
 {
-  int* paso;
-  arrayGen('R',10);
-
-  paso=createCanvas();
-  printCanvas(paso);
-
+  printCanvas(createCanvas());
   return 0;
 }
 
-char* arrayGen(char c, int n){
-  int i;
-  char *p1;
-
-  p1 = (char*)malloc (n * sizeof(int)); //reserva memoria según el largo que se ingresa en n
-
-  printf("Array created: "); //va posición por posición n veces asignando el valor c, a su vez lo va imprimiendo
-  for(i=0; i < n; i++){
-    *p1 = c;
-    printf("%c", *p1);
-    p1++;
-  }
-  printf("\n\n");
-  p1 = p1-n;
-
-  return p1;
-}
 
 int* createCanvas(){
   int i,j;
