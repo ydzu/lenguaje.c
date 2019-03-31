@@ -14,11 +14,11 @@ main()
 
 int* createCanvas(){
   int i,j;
-  int canvas[10][10]={0};
+  int canvas[10][10]={0};  // llllllll castearlo
   int *ptrCanvas, *copyCanvas;
 
   ptrCanvas = (int*)malloc (100 * sizeof(int)); //como no podía acceder al array 2D desde printCanvas, hice esto por si era un problema de memoria
-  ptrCanvas = &canvas[0][0]; //apunto a la primer posición del array 2D
+  ptrCanvas = &canvas[0][0]; //apunto a la primer posición del array 2D // llllllll en este caso ptrCanvas apunto a una posición del stack??
   copyCanvas = ptrCanvas;
 
   for (i=0; i<10; i++){        //para asegurarme de que estoy manipulando bien el array 2D hice esto. FUNCIONA BIEN
