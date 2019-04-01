@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int* createCanvas();
-void printCanvas(int *ptrToCanvas);
+int* createCanvas();                    //crea un array 2D y devuelve un puntero que apunta a su primer posición
+void printCanvas(int *ptrToCanvas);     //le pasas un puntero a array 2D y lo imprime
 
 
 main()
